@@ -130,6 +130,6 @@ export async function createBooking(bookingData, formData) {
   // Revalidation
   revalidatePath(`/cabins/${bookingData.cabinId}`);
 
-  // Redirection
+  // Redirection to thank you for booking page.
   redirect("/cabins/thankyou");
 }
